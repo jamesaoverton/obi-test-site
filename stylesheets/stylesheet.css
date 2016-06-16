@@ -53,6 +53,23 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
 
+.nav-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    text-align: right;
+    padding-right: 50px;
+}
+.nav-block {
+  display: inline-block;
+    width: auto;
+
+}
+
+.nav-block-item {
+  margin-left: 20px;
+}
+
 .page-header {
   color: #fff;
   text-align: center;

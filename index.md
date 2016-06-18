@@ -57,3 +57,65 @@ When you use the stable identifier in your spreadsheet or database, it's easier 
     </tr>
   </tbody>
 </table>
+
+<script type="text/javascript">
+
+var stuff = {"employees":[
+    {"firstName":"John", "lastName":"Doe"},
+    {"firstName":"Anna", "lastName":"Smith"},
+    {"firstName":"Peter", "lastName":"Jones"}
+]};
+var content =  [
+{ title: 'Andorra', category: 'Places'},
+{ title: 'United Arab Emirates', category: 'Places'},
+{ title: 'Afghanistan', category: 'Places'},
+  { title: 'Antigua' },
+  { title: 'Anguilla' },
+  { title: 'Albania' },
+  { title: 'Armenia' },
+  { title: 'Netherlands Antilles' },
+  { title: 'Angola' },
+  { title: 'Argentina' },
+  { title: 'American Samoa' },
+  { title: 'Austria' },
+  { title: 'Australia' },
+  { title: 'Aruba' },
+  { title: 'Aland Islands' },
+  { title: 'Azerbaijan' },
+  { title: 'Bosnia' },
+  { title: 'Barbados' },
+  { title: 'Bangladesh' },
+  { title: 'Belgium' },
+  { title: 'Burkina Faso' },
+  { title: 'Bulgaria' },
+  { title: 'Bahrain' },
+  { title: 'Burundi' }
+  // etc
+];
+$(function() {
+  $('.ui.search')
+  .search({
+
+    searchFields: ['title', 'description', 'category'],
+    source: content
+  })
+;
+
+});
+  </script>
+
+Of branches and trees
+
+
+<script>
+  new InspireTree({
+  target: '.tree',
+  data: [Animal: 'Mammal', Genus: 'Furries'] // Array, callback, or promise
+});
+
+tree.on('model.loaded', function() {
+  tree.expand();
+});
+</script>
+
+<div class="myTree"></div>    

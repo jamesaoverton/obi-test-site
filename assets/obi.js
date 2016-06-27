@@ -26,17 +26,11 @@ function showTerm(term) {
 function fillTable(selector, data) {
   var table = $(selector);
   table.empty();
-  var row = $('<tr>');
-  var i = 0;
-  for (var j=0; j < data[i].length; j++) {
-    var cell = $('<th>').append(data[i][j]);
-    row.append(cell);
-  }
-  table.append(row);
-  for (var i=1; i < data.length; i++) {
+  for (var i=0; i < data.length; i++) {
     row = $('<tr>');
     for (var j=0; j < data[i].length; j++) {
-      var cell = $('<td>').append(data[i][j]);
+      var html = i == 0 ? '<th>' : '<td>';
+      var cell = $(html).append(data[i][j]);
       row.append(cell);
     }
     table.append(row);

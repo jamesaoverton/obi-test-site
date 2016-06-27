@@ -74,4 +74,10 @@ $(document).ready(function(){
   // Generate the static table.
   $('#static-table').addClass('table');
   fillTable('#static-table', table_data);
+
+  // Generate tree of all OBI terms.
+  new InspireTree({
+    target: '#term-tree',
+    data: $.getJSON('assets/term-tree.json')
+  });
 });

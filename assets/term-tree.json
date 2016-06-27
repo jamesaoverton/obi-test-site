@@ -1,0 +1,8 @@
+[
+ {"text": "investigation"},
+ {"text": "assay",
+  "children": [
+    {"text": "histology"},
+    {"text": "imaging assay"}
+ ]}
+]

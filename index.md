@@ -1,8 +1,11 @@
 ---
 layout: default
 title: OBI | Home
+stylesheets: |
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/inspire-tree/1.8.0/inspire-tree.css"></script>
 scripts: |
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/inspire-tree/1.8.0/inspire-tree.min.js"></script>
   <script type="text/javascript" src="assets/obi.js"></script>
 header: |
   <div class="jumbotron">
@@ -37,3 +40,7 @@ Every OBI term has a textual definition, synonyms, English label, and other info
 Use the stable identifier in your spreadsheet or database. Then it's easier to share your data with other OBI users.
 
 <table id="static-table"></table>
+
+OBI terms also form a tree, with links to other terms that enable powerful search and data analysis.
+
+<div id="term-tree"></div>

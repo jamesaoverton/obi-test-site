@@ -80,4 +80,22 @@ $(document).ready(function(){
     target: '#term-tree',
     data: $.getJSON('assets/term-tree.json')
   });
+
+  // Generate small tree
+  new InspireTree({
+    target: '#small-tree',
+    selection: {
+      mode: 'checkbox',
+      multiple: true
+    },
+    data: [
+    {"text": "assay",
+      "children": [
+      {"text": "histology"},
+      {"text": "imaging assay"}]},
+    {"text": "gross anatomical part",
+      "children": [
+      {"text": "lung"},
+      {"text": "foot"}]}
+  ]}).expand().select();
 });

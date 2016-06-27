@@ -44,3 +44,7 @@ Use the stable identifier in your spreadsheet or database. Then it's easier to s
 OBI terms also form a tree, with links to other terms that enable powerful search and data analysis.
 
 <div id="term-tree"></div>
+
+We can combine OBI terms (and other ontology terms) to enable powerful queries.
+
+<div id="small-tree"></div>

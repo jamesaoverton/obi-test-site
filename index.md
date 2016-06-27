@@ -33,3 +33,7 @@ Every OBI term has a textual definition, synonyms, English label, and other info
 
 <div id="term-search"></div>
 <div id="term-view"></div>
+
+Use the stable identifier in your spreadsheet or database. Then it's easier to share your data with other OBI users.
+
+<table id="static-table"></table>

@@ -1,5 +1,5 @@
 // Define table data.
-var table_data = [
+var table-data = [
   ["Assay ID", "Assay Type", "Anatomy"],
   ["1", "histology", "lung"],
   ["2", "imaging assay", "lung"],
@@ -26,20 +26,17 @@ function showTerm(term) {
 function fillTable(selector, data) {
   var table = $(selector);
   table.empty();
-  var row = $('<tr>');
+  var row = table.append('<tr>');
   var i = 0;
   for (var j=0; j < data[i].length; j++) {
-    var cell = $('<th>').append(data[i][j]);
-    row.append(cell);
+    var cell = row.append('<tr>');
+    cell.append(data[i][j]);
   }
-  table.append(row);
   for (var i=1; i < data.length; i++) {
-    row = $('<tr>');
     for (var j=0; j < data[i].length; j++) {
-      var cell = $('<td>').append(data[i][j]);
-      row.append(cell);
+      var cell = row.append('<td>');
+      cell.append(data[i][j]);
     }
-    table.append(row);
   }
 }
 
@@ -71,7 +68,5 @@ $(document).ready(function(){
     input.val('assay');
   });
 
-  // Generate the static table.
-  $('#static-table').addClass('table');
   fillTable('#static-table', table_data);
 });

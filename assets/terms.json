@@ -1,0 +1,17 @@
+{
+  "OBI:0000066": {
+    "id": "OBI:0000066",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000066",
+    "name": "investigation",
+    "synonyms": "",
+    "definition": "A planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)."
+  },
+
+  "OBI:0000070": {
+    "id": "OBI:0000070",
+    "iri": "http://purl.obolibrary.org/obo/OBI_0000070",
+    "name": "assay",
+    "synonyms": "observation",
+    "definition": "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies."
+  }
+}

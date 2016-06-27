@@ -1,0 +1,5 @@
+[
+  {"id": "OBI:0000066", "name": "investigation"},
+  {"id": "OBI:0000070", "name": "assay"},
+  {"id": "OBI:0000070", "name": "observation"}
+]

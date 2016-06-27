@@ -89,15 +89,15 @@ $(document).ready(function(){
       multiple: true
     },
     data: [
-    {text: 'assay',
-      children: [
-      {text: 'histology'},
-      {text: 'imaging assay'}]},
-    {text: 'gross anatomical part',
-      children: [
-      {text: 'lung'},
-      {text: 'foot'}]}
-  ]}).expand().select();
+      {text: 'assay',
+        children: [
+        {text: 'histology'},
+        {text: 'imaging assay'}]},
+      {text: 'gross anatomical part',
+        children: [
+        {text: 'lung'},
+        {text: 'foot'}]}]
+  }).expand().select();
 
   // Generate the interactive table.
   $('#interactive-table').addClass('table');

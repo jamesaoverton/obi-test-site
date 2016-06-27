@@ -53,7 +53,7 @@ $(document).ready(function(){
 
   // Create a term search input field.
   $('#term-search').addClass('form-group')
-    .append('<input id="term-input" type="text">');
+    .append('<input id="term-input" type="text" autocomplete="off">');
   var input = $('#term-input')
   input.addClass('form-control').change(function() {
     var current = input.typeahead("getActive");

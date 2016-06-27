@@ -98,4 +98,8 @@ $(document).ready(function(){
       {"text": "lung"},
       {"text": "foot"}]}
   ]}).expand().select();
+
+  // Generate the interactive table.
+  $('#interactive-table').addClass('table');
+  fillTable('#interactive-table', table_data);
 });

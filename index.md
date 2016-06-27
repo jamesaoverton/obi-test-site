@@ -48,3 +48,5 @@ OBI terms also form a tree, with links to other terms that enable powerful searc
 We can combine OBI terms (and other ontology terms) to enable powerful queries.
 
 <div id="small-tree"></div>
+
+<table id="interactive-table"></table>

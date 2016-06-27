@@ -18,6 +18,8 @@
     <![endif]-->
 
     <link rel="stylesheet" href="assets/obi.css">
+
+    {{ page.stylesheets }}
   </head>
   <body>
 
@@ -26,7 +28,6 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
             <li role="presentation"><a href="#">Cite OBI</a></li>
             <li role="presentation"><a href="faq.html">FAQ</a></li>
             <li role="presentation"><a href="#">Contact Us</a></li>
@@ -34,18 +35,10 @@
             <li role="presentation"><a href="#">Term Requests</a></li>
           </ul>
         </nav>
-        <h3 class="text-muted">OBI</h3>
+        <h3 class="text-muted"><a href="/">OBI</a></h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Ontology for Biomedical Investigations</h1>
-        <p class="lead">Clear communication for biomedical research</p>
-        <p>
-          <a class="btn btn-md btn-success" href="#" role="button">Browse OBI</a>
-          <a class="btn btn-md btn-success" href="#" role="button">Download OBI</a>
-          <a class="btn btn-md btn-success" href="#" role="button">View on Github</a>
-        </p>
-      </div>
+      {{ page.header }}
 
       <div class="row main-content">
         {{ content }}
@@ -57,5 +50,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    {{ page.scripts }}
   </body>
 </html>

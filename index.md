@@ -1,13 +1,23 @@
 ---
 layout: default
 title: OBI | Home
+header: |
+  <div class="jumbotron">
+    <h1>Ontology for Biomedical Investigations</h1>
+    <p class="lead">Clear communication for biomedical research</p>
+    <p>
+      <a class="btn btn-md btn-success" href="#" role="button">Browse OBI</a>
+      <a class="btn btn-md btn-success" href="#" role="button">Download OBI</a>
+      <a class="btn btn-md btn-success" href="#" role="button">View on Github</a>
+    </p>
+  </div>
 ---
 
 OBI helps you communicate clearly about scientific investigations by defining more than 2500 terms for assays, devices, objectives, and more.
 
 It's easy to use with many other 
-[Open Biomedical Ontologies](http://obofoundry.org)
-, including the
+[Open Biomedical Ontologies](http://obofoundry.org),
+including the
 [Gene Ontology](),
 [Protein Ontology](),
 [Plant Ontology](),

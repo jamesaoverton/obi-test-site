@@ -55,7 +55,7 @@ body {
 
 /* Supporting content */
 .main-content {
-  margin: 40px 0;
+  margin: 0;
 }
 .main-content p + h4 {
   margin-top: 28px;
@@ -72,11 +72,12 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 }
 

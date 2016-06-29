@@ -27,7 +27,7 @@ function fillTable(selector, data) {
   var table = $(selector);
   table.empty();
   for (var i=0; i < data.length; i++) {
-    row = $('<tr>');
+    row = $('<tr>').attr('id', selector.substr(1) + '-' + i);
     for (var j=0; j < data[i].length; j++) {
       var html = i == 0 ? '<th>' : '<td>';
       var cell = $(html).append(data[i][j]);
@@ -35,6 +35,21 @@ function fillTable(selector, data) {
     }
     table.append(row);
   }
+}
+
+var small_tree;
+
+// When a node in the small tree is (de)selected,
+// update the interactive-table.
+function updateInteractiveTable(event, node) {
+  var selected_node = small_tree.selected();
+  var selected_names = [];
+  for (var i=0; i < selected_node.length; i++) {
+    selected_names.push(selected_node[i].text);
+  }
+  console.log(selected_names);
+  // TODO: implement correct show/hide logic.
+  $('#interactive-table-1').toggle();
 }
 
 $(document).ready(function(){
@@ -76,7 +91,7 @@ $(document).ready(function(){
   });
 
   // Generate small tree
-  new InspireTree({
+  small_tree = new InspireTree({
     target: '#small-tree',
     selection: {
       mode: 'checkbox',
@@ -91,7 +106,10 @@ $(document).ready(function(){
         children: [
         {text: 'lung'},
         {text: 'foot'}]}]
-  }).expand().select();
+  });
+  small_tree.expand().select();
+  small_tree.on('node.selected', updateInteractiveTable);
+  small_tree.on('node.deselected', updateInteractiveTable);
 
   // Generate the interactive table.
   $('#interactive-table').addClass('table');

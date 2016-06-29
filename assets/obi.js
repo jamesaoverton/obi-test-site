@@ -9,15 +9,15 @@ var table_data = [
 // Given a term map, update the term search results box.
 function showTerm(term) {
   $('#term-view').empty();
-  $('#term-view').append('<p id="term-label"><span>Label:</span> </p>');
+  $('#term-view').append('<p id="term-label"><span><strong>Label:</strong></span> </p>');
   $('#term-label').append(term.name);
-  $('#term-view').append('<p id="term-id"><span>ID:</span> </p>');
+  $('#term-view').append('<p id="term-id"><span><strong>ID:</strong></span> </p>');
   $('#term-id').append(term.id);
-  $('#term-view').append('<p id="term-iri"><span>IRI:</span> </p>');
+  $('#term-view').append('<p id="term-iri"><span><strong>IRI:</strong></span> </p>');
   $('#term-iri').append(term.iri);
-  $('#term-view').append('<p id="term-definition"><span>Definition:</span> </p>');
+  $('#term-view').append('<p id="term-definition"><span><strong>Definition:</strong></span> </p>');
   $('#term-definition').append(term.definition);
-  $('#term-view').append('<p id="term-synonyms"><span>Synonyms:</span> </p>');
+  $('#term-view').append('<p id="term-synonyms"><span><strong>Synonyms:</strong></span> </p>');
   $('#term-synonyms').append(term.synonyms);
 }
 

@@ -24,10 +24,10 @@ OBI helps you communicate clearly about scientific investigations by defining mo
 It's easy to use with many other
 [Open Biomedical Ontologies](http://obofoundry.org),
 including the
-[Gene Ontology](),
-[Protein Ontology](),
-[Plant Ontology](),
-[ChEBI](),
+[Gene Ontology](http://geneontology.org/),
+[Protein Ontology](http://pir.georgetown.edu/pro/pro.shtml),
+[Plant Ontology](http://www.plantontology.org/),
+[ChEBI](http://www.ebi.ac.uk/chebi/),
 and [many more](http://obofoundry.org).
 
 ## How it works
@@ -45,8 +45,12 @@ OBI terms also form a tree, with links to other terms that enable powerful searc
 
 <div id="term-tree"></div>
 
-We can combine OBI terms (and other ontology terms) to enable powerful queries.
+<div class="panel panel-default">
+  <div class="panel-heading">We can combine OBI terms (and other ontology terms) to enable powerful queries</div>
+  <div class="panel-body">
+  <div id="small-tree"></div>
 
-<div id="small-tree"></div>
+  <table id="interactive-table"></table>
 
-<table id="interactive-table"></table>
+  </div>
+</div>
